@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginVertical="@dimen/_8sdp"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        app:cardMaxElevation="@dimen/_12sdp"
+        app:cardElevation="@dimen/_8sdp"
+        android:outlineAmbientShadowColor="@color/themecolor"
+        android:shadowColor="@color/themecolor"
+        android:outlineSpotShadowColor="@color/themecolor"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:src="@drawable/ic_octicons_mark_github" />
+
+            <TextView
+                android:id="@+id/textRepoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:text="" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
